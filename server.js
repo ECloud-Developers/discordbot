@@ -4,7 +4,7 @@ const client = new Discord.Client();
 // 'client.on('message')' commands are triggered when the
 // specified message is read in a text channel that the bot is in.
 
-client.login("NzAzNzIwOTY1NjAyODAzODA0.XqxgKA.dartWketRiHnqjhcOssRGoJ9Ov8");
+client.login("NzAzNzIwOTY1NjAyODAzODA0.XqxmNQ.ROYAz0MjQ9fyMOZCVTqi_k9_SJ4");
 
 client.on('message', message => {
   if (message.content === 'ping') {
