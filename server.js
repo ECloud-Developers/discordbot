@@ -7,11 +7,13 @@ const client = new Discord.Client();
 
 client.login('NzAzNzIwOTY1NjAyODAzODA0.XrA7Tg.-TYQj2_wx6Sfxu7Ffy1YAQRkcJw');
 
+
 client.on('message', message => {
   if (message.content === 'ping') {
     message.reply('pong');
   }
 });
+
 
 //client.on('message', message => {
 //  if (message.content === 'soundcloud') {
