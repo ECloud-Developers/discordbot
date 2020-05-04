@@ -1,8 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+
 // 'client.on('message')' commands are triggered when the
 // specified message is read in a text channel that the bot is in.
+
+client.login('NzAzNzIwOTY1NjAyODAzODA0.XrA7Tg.-TYQj2_wx6Sfxu7Ffy1YAQRkcJw');
 
 client.on('message', message => {
   if (message.content === 'ping') {
@@ -10,6 +13,21 @@ client.on('message', message => {
   }
 });
 
-client.login("NzAzNzIwOTY1NjAyODAzODA0.XqxgKA.dartWketRiHnqjhcOssRGoJ9Ov8");
+//client.on('message', message => {
+//  if (message.content === 'soundcloud') {
+//    message.reply('Go check out the best soundcloud profile here: https://soundcloud.com/electro_cloud');
+//  }
+//});
 
 
+
+client.on("ready", () =>{
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "In Development",  //The message shown
+            type: "Listening" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+ });
