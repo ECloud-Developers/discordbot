@@ -5,7 +5,7 @@ const client = new Discord.Client();
 // 'client.on('message')' commands are triggered when the
 // specified message is read in a text channel that the bot is in.
 
-client.login('NzAzNzIwOTY1NjAyODAzODA0.XrA7Tg.-TYQj2_wx6Sfxu7Ffy1YAQRkcJw');
+client.login('Your Token Here');
 
 
 client.on('message', message => {
